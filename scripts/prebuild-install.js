@@ -19,6 +19,8 @@ if (
   pbi += ' --arch=armv' + armv;
 }
 
+console.log(pbi);
+
 exec(pbi, function(err, stdout, stderr) {
   console.log(stdout);
   console.log(stderr);
