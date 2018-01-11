@@ -4,6 +4,8 @@ var pbi = 'prebuild-install';
 var platform = process.platform;
 var arch = process.arch;
 
+console.log('ARCH:', arch, 'PLATFORM:', platform);
+
 if (process.env.npm_config_zmq_external == "true") {
   console.log('Requested to use external libzmq. Skipping download of prebuilt binaries.');
   process.exit(1);
