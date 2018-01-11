@@ -1,8 +1,8 @@
 var exec = require('child_process').exec;
 
 var pbi = 'prebuild-install';
-var platform = process.platform;
-var arch = process.arch;
+var platform = process.platform || process.env.TARGET_PLATFORM;
+var arch = process.arch || process.env.TARGET_ARCH;
 
 console.log('ARCH:', arch, 'PLATFORM:', platform);
 
