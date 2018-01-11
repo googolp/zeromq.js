@@ -19,6 +19,8 @@ if (
   pbi += ' --arch=armv' + armv;
 }
 
+pbi += ' --force';
+
 console.log(pbi);
 
 exec(pbi, function(err, stdout, stderr) {
